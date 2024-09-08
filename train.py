@@ -171,7 +171,7 @@ def preprocess_data(file_path, pass_preprocessing=False):
 
 # Основная функция для обучения
 def train_model(data_path):
-    df = preprocess_data(data_path, pass_preprocessing=True)
+    df = preprocess_data(data_path, pass_preprocessing=False)
 
     df = df.dropna(subset=["days_until_failure_1"])
 
